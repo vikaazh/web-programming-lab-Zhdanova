@@ -53,6 +53,23 @@
             .d   {
                 position: relative;
             }
+            .f   {
+                background-clip: content-box;
+                background-color: rgb(120, 122, 241);
+                border-width: 5px;
+                border-radius: 10px;
+                border-color: blue;
+                border-style: double;
+                width: 300px;  
+                height: 100px;
+            }
+            .f:hover {
+                color:rgb(236, 97, 62);
+                background-clip: content-box;
+                background-color: rgb(0, 255, 21);
+                border-radius: 10px;
+                border: 10px solid rgba(209, 255, 123, 0.774);
+            }
 
                 
         </style>
@@ -101,6 +118,13 @@
                 Зимы блистательным ковром.<br>
                 Все ярко, все бело кругом.
             </div>
+            <h1>Лесенка</h1>
+            <div class="f"> Блок А</div>
+            <div class="f"style="position: relative; top: -15px; left: 15px">Блок Б</div>
+            <div class="f"style="position: relative; top: -25px; right: -25px"> Блок В</div>
+            <div class="f" style="position: relative; top: -35px; right: -35px">Блок Г</div>
+            <div class="f"style="position: relative; top: -45px; right: -45px"> Блок Д</div>
+        </div>
 
 
         <div class="footer">
