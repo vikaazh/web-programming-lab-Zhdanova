@@ -6,29 +6,34 @@
         <link rel="stylesheet" href="lab6.css" type="text/css">
         <script>
             console.log ('Всем привет!!!')
-            
+
             let x = 33;
             let s = 'яблоки';
-            let if = 17;
+            //let if = 17;
             console.log('x=', x, 's=', s);
         </script>
+        
     </head>
     <body>
         <div class="header">
-            Жданова Виктория
+            <div id="student">Жданова Виктория</div>
+            <div class ="language">
+                <input type="button" value="ru" onclick="setRussian ()">
+                <input type="button" value="en"onclick="setEnglish ()">
+            </div>
         </div>
 
     <div class="content">
         <form>
             <div>
                 <div> 
-                    <span> Виктория</span>: <input type="text">
+                    <span> Ваше имя</span>: <input type="text">
                 </div>
                 <div>
-                    <span> Жданова</span>: <input type="text">
+                    <span> Ваша фамилия </span>: <input type="text">
                 </div>
                 <div>
-                    <span> 20</span>: <input type="number">
+                    <span> Ваш возраст</span>: <input type="number">
                 </div>
                 <div>
                     <input type="button" value="ок">
@@ -38,7 +43,7 @@
         </form>
     </div>
 
-        <div class="footer">
+        <div class="footer" id="footer">
             Факультет бизнеса, ФБИ-01, 3 курс, 2022
         </div>
      </body>
