@@ -16,7 +16,7 @@
     </head>
     <body>
         <div class="header">
-            <div id="student">Жданова Виктория</div>
+            <div id="student" onclick= "Studname()">Жданова Виктория</div>
             <div class ="language">
                 <input type="button" value="ru" onclick="setRussian ()">
                 <input type="button" value="en"onclick="setEnglish ()">
@@ -25,25 +25,25 @@
 
     <div class="content">
         <form>
-            <div>
+            <div id="user-data">
                 <div> 
-                    <span id= "your-name"></span>Ваше имя</span>: <input type="text" id= "input-name" placeholder="введите имя">
+                    <span id="your-name">Ваше имя</span>: <input type="text" id= "input-name" placeholder="введите имя">
                 </div>
                 <div>
-                    <span id= "your-surname"> Ваша фамилия </span>: <input type="text" id= "input-surname"placeholder="введите фамилию">
+                    <span id="your-surname">Ваша фамилия</span>: <input type="text" id= "input-surname"placeholder="введите фамилию">
                 </div>
                 <div>
-                    <span id= "your-age"> Ваш возраст</span>: <input type="number" id= "input-age" placeholder="введите возраст">
+                    <span id="your-age">Ваш возраст</span>: <input type="number" id= "input-age" placeholder="введите возраст">
                 </div>
                 <div>
-                    <input type="button" value="ок" id="ok-button">
+                    <input type="button" value="ок" id="ok-button" onclick= "showAlert()">
                     <input type="button" value="сброс" id="reset-button">
                 </div>
             </div>
         </form>
     </div>
 
-        <div class="footer" id="footer">
+        <div class="footer" id="footer" onclick= "infooter()">
             Факультет бизнеса, ФБИ-01, 3 курс, 2022
         </div>
      </body>
