@@ -50,14 +50,15 @@ function makeSnowfall () {
     for (let i = 0; i<stepCount; i++) {
         Snowfall.innerHTML += '<img class= "Snowfall" src="1pic.png">';
     }
-    let PictureSnow= document.images;
-    for (let i=0; i<Snowfall.length;i++){
-        PictureSnow [i]. style.left = Math.random()*window.innerWidth + 'px';
-        PictureSnow [i]. style.top = Math.random()*window.innerHeight + 'px';
-        PictureSnow [i]. style.width = Math.random()*100 + 'px';
+    let PictureSnow= document.querySelectorAll ('.Snowfall');
+    for (let i=0; i<PictureSnow.length;i++){
+        PictureSnow[i].style.left = Math.random()*window.innerWidth + 'px';
+        PictureSnow[i].style.top = Math.random()*window.innerHeight + 'px';
+        PictureSnow[i].style.width = Math.random()*100 + 'px';
     }
 }
 function ALLFunction() {
-makeStairs();
-makeSnowfall();
+    makeStairs();
+    makeSnowfall();
+    makepoem();
 }
