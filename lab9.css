@@ -20,3 +20,11 @@
     left: 0;
     right: 0;
 }
+#coords {
+    background: rgb(23, 1, 78);
+    color:white;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    line-height: 30em;
+}
